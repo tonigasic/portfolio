@@ -74,11 +74,11 @@
     top: 0;
 }
 
+/* Use @-webkit-keyframes for Safari/Chrome */
 @keyframes textColorChange {
     0% {color: white;}
     50% {color: black;}
 }
-/* Use @-webkit-keyframes for Safari/Chrome */
 
 .aboutMe__infoTextPuls {
     animation: textColorChange 5s infinite;
