@@ -1,0 +1,54 @@
+.myWork {
+    color: white;
+    position: absolute;
+    top: 60px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.myWork > div {
+    width: 80%;
+}
+
+.myWork__header {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.myWork__header > p {
+    font-size: 60px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+.myWork__products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 420px);
+    grid-template-rows: 380px;
+    grid-auto-rows: min-content;
+    place-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+    .myWork__header > p {
+        font-size: 40px;
+    }
+
+    .myWork__header > h3 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .myWork__products {
+        grid-template-columns: repeat(auto-fill, 300px);
+    }
+}

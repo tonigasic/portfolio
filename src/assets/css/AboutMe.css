@@ -1,0 +1,148 @@
+.aboutMe {
+    color: white;
+    position: absolute;
+    top: 60px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.aboutMe > div {
+    width: 80%;
+}
+
+.aboutMe__header {
+    text-align: center;
+}
+
+.aboutMe__header > p {
+    font-size: 60px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.aboutMe__intro {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 600px);
+    grid-template-rows: 500px;
+    grid-auto-rows: min-content;
+}
+
+.aboutMe__images {
+    margin-top: 50px;
+    opacity: 0.7;
+}
+
+.aboutMe__buttonContainer {
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.aboutMe__infoImageContainer {
+    position: relative;
+    display: grid;
+    place-items: flex-end;
+}
+
+.aboutMe__infoTextContainer {
+    position: relative;
+    align-items: center;
+    display: grid;
+    place-items: flex-start;
+}
+
+.aboutMe__infoTextWelcome {
+    padding: 10px;
+}
+
+.aboutMe__infoText {
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.aboutMe__infoImage {
+    width: 70%;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes textColorChange {
+    0% {color: white;}
+    50% {color: black;}
+}
+/* Use @-webkit-keyframes for Safari/Chrome */
+
+.aboutMe__infoTextPuls {
+    animation: textColorChange 5s infinite;
+}
+
+.aboutMe__buttonContainer > button {
+    color: white;
+}
+
+@media only screen and (max-width: 400px) {
+    .aboutMe__intro {
+        grid-template-columns: repeat(auto-fill, 350px);
+        grid-template-rows: 300px;
+    }
+    .aboutMe__intro {
+        margin-top: 0;
+    }
+
+    .aboutMe__infoImageContainer {
+        place-items: center;
+        place-content: center;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1499px) {
+    .aboutMe__intro {
+        grid-template-columns: repeat(auto-fill, 400px);
+        grid-template-rows: 500px;
+    }
+
+    .aboutMe__infoImageContainer {
+        place-items: end;
+        place-content: flex-start;
+    }
+
+    .aboutMe__infoImage {
+        width: 90%;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .aboutMe__intro {
+        grid-template-columns: repeat(auto-fill, 600px);
+        grid-template-rows: 400px;
+    }
+
+    .aboutMe__infoImageContainer {
+        place-items: center;
+        place-content: center;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 599px) {
+    .aboutMe__intro {
+        grid-template-columns: repeat(auto-fill, 400px);
+        grid-template-rows: 300px;
+    }
+    .aboutMe__intro {
+        margin-top: 0;
+    }
+
+    .aboutMe__infoImageContainer {
+        place-items: center;
+        place-content: center;
+    }
+}

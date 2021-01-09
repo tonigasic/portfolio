@@ -1,0 +1,201 @@
+.contact {
+    color: white;
+    position: absolute;
+    top: 60px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.contact__header {
+    display: grid;
+    place-items: center;
+}
+
+.contact__header > p {
+    font-size: 30px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+.contact__container {
+    width: 60vw;
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 420px);
+    grid-template-rows: 380px;
+    grid-auto-rows: min-content;
+}
+
+.contact__infoContainer {
+    position: relative;
+    display: grid;
+    place-items: flex-end;
+}
+
+.contact__infoInputsContainer {
+    position: relative;
+    align-items: center;
+    display: grid;
+    place-items: flex-start;
+}
+
+.contact__infoDivs {
+    background-color: rgba(250,250,250,0.25);
+    height: 60px;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    padding: 15px;
+    margin-top: 30px;
+    transition: transform .4s;
+    cursor: pointer;
+}
+
+.contact__infoDivs:hover {
+    transform: scale(1.07);
+}
+
+.contact__inputDivs {
+    height: fit-content;
+    width: 90%;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.contact__input {
+    width: 90%;
+}
+
+.contact__infoText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0.7;
+    align-items: flex-end;
+}
+
+.contact__infoIcon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0.3;
+}
+
+@media only screen and (max-width: 550px) {
+    .contact__infoDivs {
+        width: 90%;
+    }
+
+    .contact__inputDivs {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .contact__infoDivs {
+        width: 70%;
+    }
+
+    .contact__inputDivs {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1111px) {
+    .contact__infoContainer {
+        place-items: center;
+    }
+
+    .contact__infoInputsContainer {
+        place-items: center;
+    }
+
+    .contact__input {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 1111px) {
+    .contact__infoDivs {
+        width: 100%;
+    }
+
+    .contact__inputDivs {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1300px) {
+    .contact__container {
+        width: 90vw;
+        grid-template-columns: repeat(auto-fill, 500px);
+        grid-template-rows: 380px;
+    }
+    .contact__infoDivs {
+        width: 70%;
+    }
+    .contact__inputDivs {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1500px) {
+    .contact__container {
+        width: 80vw;
+        grid-template-columns: repeat(auto-fill, 460px);
+        grid-template-rows: 380px;
+    }
+    .contact__infoDivs {
+        width: 80%;
+    }
+
+    .contact__inputDivs {
+        width: 80%;
+    }
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #86c4fa!important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: #86c4fa!important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: #86c4fa !important;
+}
+
+.MuiInputBase-root {
+    overflow:hidden;
+}
+
+.MuiOutlinedInput-notchedOutline:hover {
+    border-color: #86c4fa!important;
+}
+
+.MuiFormLabel-root {
+    color: #86c4fa!important;
+}
+
+.contact__input > div > input {
+    color: white!important;
+}
+
+.contact__input > div > textarea {
+    color: white!important;
+}
+
+/* Hide scrollbar for Crome, Safari and Opera */
+.contact__input > div > textarea::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.contact__input > div > textarea {
+    -ms-overflow-style: none; /* IE and EDGE */
+    scrollbar-width: none; /* Firefox */
+}

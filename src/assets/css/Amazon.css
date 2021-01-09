@@ -1,0 +1,135 @@
+.amazon {
+    color: white;
+    position: absolute;
+    top: 60px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.amazon > div {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.amazon__header {
+    display: grid;
+    place-items: center;
+}
+
+.amazon__header > p {
+    font-size: 60px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+.amazon__info {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.amazon__info > p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.amazon__skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: auto 100px auto;
+    place-content: center;
+    object-fit: cover;
+    gap: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.amazon__oneSkill {
+    padding: 15px;
+    position: relative;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    transition: transform .4s;
+    cursor: pointer;
+}
+
+.amazon__oneSkill:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.amazon__oneSkill > img {
+    width: 100px;
+    height: 100px;
+}
+
+.amazon__cardInfo {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+
+.amazon__cardInfo > div {
+    border: 1px solid #4096ee;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.amazon__buttonContainer {
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 319px) {
+    .amazon__oneSkill > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .amazon__skills {
+        grid-template-columns: repeat(auto-fill, 70px);
+        grid-template-rows: auto 50px auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .amazon__header > p {
+        font-size: 50px;
+        padding: 5px;
+    }
+
+    .amazon__header > h3 {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .amazon__header {
+        text-align: center;
+    }
+
+    .amazon__info > p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+    .amazon__oneSkill > img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .amazon__skills {
+        grid-template-columns: repeat(auto-fill, 100px);
+        grid-template-rows: auto 70px auto;
+    }
+
+
+}

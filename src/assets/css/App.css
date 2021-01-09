@@ -1,0 +1,35 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: #4096ee; /* Old browsers */
+  background: -moz-linear-gradient(top, #4096ee 0%, #39ced6 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #4096ee 0%,#39ced6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #4096ee 0%,#39ced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#39ced6',GradientType=0 ); /* IE6-9 */
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.app__image:after {
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom: 0;
+}
+
+.app__image {
+  opacity: 0.15;
+  position: fixed;
+  top: 0;
+  left: -25%;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.app_fireworks {
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}

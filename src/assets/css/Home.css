@@ -1,0 +1,83 @@
+.content {
+    color: white;
+    position: absolute;
+    top: 60px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.content__welcomeContainer {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+.content__welcome {
+    font-size: 70px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.content__welcome > span {
+    color: #051d79;
+}
+
+.content__welcomeContainerTyping {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.content__buttonContainer {
+    margin-top: 150px;
+}
+
+@media only screen and (max-width: 980px) {
+    .content__welcomeContainerTyping > div > h2 {
+        font-size: 13px!important;
+    }
+}
+
+@media only screen and (min-width: 981px) and (max-width: 1120px) {
+    .content__welcomeContainerTyping > div > h2 {
+        font-size: 16px!important;
+    }
+}
+
+@media only screen and (min-width: 1121px) and (max-width: 1500px) {
+    .content__welcomeContainerTyping > div > h2 {
+        font-size: 18px!important;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .content__welcome {
+        font-size: 20px;
+    }
+
+    .content__welcomeContainerTyping {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 680px) {
+    .content__welcome {
+        font-size: 30px;
+    }
+
+    .content__welcomeContainerTyping {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 681px) and (max-width: 980px) {
+    .content__welcome {
+        font-size: 50px;
+    }
+
+    .content__welcomeContainerTyping > div > h2 {
+        font-size: 14px!important;
+    }
+}

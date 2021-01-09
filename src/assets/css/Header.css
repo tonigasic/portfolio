@@ -1,0 +1,144 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 2vw;
+}
+
+.header__option > a > span > span {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+}
+
+.header__option > a >span > span:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.header__option > a >span > span:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header__option > a > span.active span:after{
+    width: 100%;
+    left: 0;
+}
+
+.header__logo {
+    width: 50px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 5px;
+}
+
+.header__navMobile {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header__navMobile > svg {
+    padding: 7px;
+}
+
+.header__navMobileContainer {
+    height: 100vh;
+    background-color: #5abcea;
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+}
+
+.hideBurgerMenu {
+    width: 0!important;
+}
+
+.showBurgerMenu {
+    width: 300px;
+}
+
+.header__navMobileContainerClose {
+    height: 40px;
+}
+
+.header__navMobileContainerClose > svg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.header__navMobileOption > a {
+    text-decoration: none;
+}
+
+.header__navMobileOption > a > span > span {
+    text-decoration: none;
+    color: white;
+}
+
+.header__navMobileOption:hover {
+    background-color: #68b7fc;
+}
+
+.header__navMobileOption {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+    .showBurgerMenu {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__navMobile {
+        display: unset;
+    }
+}
