@@ -58,6 +58,27 @@
     transform: scale(1.07);
 }
 
+.contact__infoDivsIcons {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 70px;
+    margin-top: 30px;
+    transition: transform .4s;
+}
+
+.contact__infoDivsIcons > img:hover {
+    transform: scale(1.07);
+}
+
+.contact__infoDivsIcons > img {
+    width: 70px;
+    height: 70px;
+    transition: transform .4s;
+    cursor: pointer;
+    padding: 20px;
+}
+
 .contact__inputDivs {
     height: fit-content;
     width: 90%;
@@ -89,6 +110,10 @@
         width: 90%;
     }
 
+    .contact__infoDivsIcons {
+        width: 90%;
+    }
+
     .contact__inputDivs {
         width: 90%;
     }
@@ -96,6 +121,10 @@
 
 @media only screen and (max-width: 550px) {
     .contact__infoDivs {
+        width: 70%;
+    }
+
+    .contact__infoDivsIcons {
         width: 70%;
     }
 
@@ -111,6 +140,7 @@
 
     .contact__infoInputsContainer {
         place-items: center;
+        margin-top: 100px;
     }
 
     .contact__input {
@@ -120,6 +150,10 @@
 
 @media only screen and (min-width: 551px) and (max-width: 1111px) {
     .contact__infoDivs {
+        width: 100%;
+    }
+
+    .contact__infoDivsIcons {
         width: 100%;
     }
 
@@ -137,6 +171,9 @@
     .contact__infoDivs {
         width: 70%;
     }
+    .contact__infoDivsIcons {
+        width: 70%;
+    }
     .contact__inputDivs {
         width: 70%;
     }
@@ -148,7 +185,12 @@
         grid-template-columns: repeat(auto-fill, 460px);
         grid-template-rows: 380px;
     }
+
     .contact__infoDivs {
+        width: 80%;
+    }
+
+    .contact__infoDivsIcons {
         width: 80%;
     }
 

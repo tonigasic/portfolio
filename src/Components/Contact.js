@@ -9,6 +9,10 @@ import TextField from '@material-ui/core/TextField';
 import axios from "../axios";
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
+import GitHubIcon from './../assets/images/svg/github-icon-1.svg';
+import LinkedinIcon from './../assets/images/svg/linkedin-icon.svg';
+import {IconButton} from "@material-ui/core";
+import Button from "@material-ui/core/Button";
 
 function Contact() {
     const [name, setName] = useState('');
@@ -125,7 +129,10 @@ function Contact() {
                                 <div className="contact__infoText">
                                     <strong>toni.gasic.portfolio@gmail.com</strong>
                                 </div>
-
+                            </div>
+                            <div className="contact__infoDivsIcons">
+                                <img src={GitHubIcon} onClick={()=> window.open('https://github.com/tonigasic', "_blank")}/>
+                                <img src={LinkedinIcon} onClick={()=> window.open('https://www.linkedin.com/in/tonig0507/', "_blank")}/>
                             </div>
                         </div>
                         <div className="contact__infoInputsContainer" style={styles.fadeInRight}>
